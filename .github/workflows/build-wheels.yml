@@ -102,4 +102,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
-        packages-dir: /home/runner/work/ttnn-visualizer/
+        packages-dir: /home/runner/work/ttnn-visualizer/dist/
