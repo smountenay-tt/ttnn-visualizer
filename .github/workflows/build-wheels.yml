@@ -97,7 +97,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: python-wheel
-        path: /home/runner/work/ttnn-visualizer/
+        path: dist/
     - name: Print Debug Info
       id: debug_info
       run: |
@@ -106,5 +106,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
-        packages-dir: /home/runner/work/ttnn-visualizer/
         verbose: true
