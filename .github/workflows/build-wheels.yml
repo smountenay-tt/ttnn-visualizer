@@ -107,3 +107,4 @@ jobs:
       with:
         repository-url: https://test.pypi.org/legacy/
         packages-dir: /home/runner/work/ttnn-visualizer/
+        verbose: true
