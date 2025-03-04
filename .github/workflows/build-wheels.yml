@@ -89,8 +89,8 @@ jobs:
     - build
     runs-on: ubuntu-latest
     environment:
-      name: pypi
-      url: https://pypi.org/p/ttnn-visualizer
+      name: testpypi
+      url: https://test.pypi.org/p/ttnn-visualizer
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
     steps:
@@ -101,3 +101,6 @@ jobs:
         path: dist/
     - name: Publish distribution 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://test.pypi.org/legacy/
+        verbose: true
